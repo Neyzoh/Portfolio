@@ -1,9 +1,4 @@
-@import '../style/settings.scss';
-
-// *::before {
-//     margin: 0;
-//     box-sizing: border-box;
-// }
+@import '../../style/settings.scss';
 
 .navbar {
     display: flex;
@@ -41,7 +36,7 @@
         margin: 0 -.25rem;
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-        font-weight: 600;
+        font-weight: regular;
     }
     
     &-link:hover{

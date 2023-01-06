@@ -1,0 +1,147 @@
+@import '../../style/settings.scss';
+
+.home-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: absolute;
+    left: 15%;
+    white-space: nowrap;
+
+    &-icon{
+        padding: 8px;
+    }
+}
+
+.home-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 22%;
+    height: 80vh;
+}
+
+.home-description-title-1{
+    padding-right: 680px;
+    font-size: 5.8rem;
+    font-weight: bold;
+    line-height: 9rem;
+}
+
+.home-description-title-2{
+    padding-right: 540px;
+    font-size: 5.8rem;
+    font-weight: bold;
+    line-height: 9rem;
+}
+
+.home-description-title-3{
+    padding-right: 390px;
+    font-size: 5.8rem;
+    font-weight: bold;
+    line-height: 9rem;
+}
+
+.home-description-title-name{
+    color: $textcolor2;
+}
+
+.home-description-title-point{
+    color: $textcolor2;
+}
+
+.home-image{
+    background-image: url('../assets/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 150px;
+    transform: translateX(-100px);
+    height: 55vh;
+    float: right;
+    width: 35%;
+}
+
+.home-underdesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 22%;
+    height: 117vh;
+
+    &-title{
+        font-size: 2.5em;
+        font-family: 'Roboto';
+        letter-spacing: 0.2rem;
+        width: 21.5ch;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid $textcolor2;
+        animation: cursor 1s step-start infinite, 
+        text 4s steps(18) alternate infinite;
+    }
+
+    @keyframes cursor {
+        0%, 100% { 
+        border-color: $textcolor2; 
+      }
+    }
+    
+    @keyframes text {
+        0% { 
+        width: 0; 
+      }
+        100% { 
+        width: 21.5ch; 
+      }
+    }
+}
+
+.scroll-down
+{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+.scroll-down span:nth-child(2)
+{
+    animation-delay: -0.2s;
+}
+.scroll-down span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+.scroll-down span
+{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+  {
+        opacity: 1;
+    }
+    100%
+  {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
