@@ -5,15 +5,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     position: absolute;
     left: 15%;
     white-space: nowrap;
 
     &-icon{
-        padding: 8px;
+        padding-bottom: 40px;
     }
 }
+
+@media (max-width: 1200px) { 
+    .home-description {
+      left: 10%; 
+    }
+    .home-description-title-1 {
+      padding-right: 500px; 
+    }
+    .home-description-title-2 {
+      padding-right: 400px; 
+    }
+    .home-description-title-3 {
+      padding-right: 300px; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .home-description {
+      left: 10%;
+    }
+    .home-description-title-1 {
+      padding-right: 300px; 
+    }
+    .home-description-title-2 {
+      padding-right: 200px; 
+    }
+    .home-description-title-3 {
+      padding-right: 100px; 
+    }
+  }
 
 .home-description{
     display: flex;
@@ -63,6 +93,7 @@
     height: 55vh;
     float: right;
     width: 35%;
+
 }
 
 .home-underdesc{
@@ -145,3 +176,5 @@
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+
+
