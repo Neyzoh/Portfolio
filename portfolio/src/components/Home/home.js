@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.scss';
 import {FaTwitter, FaGithub, FaLinkedinIn} from 'react-icons/fa'
+import About from '../About';
+import Skills from '../Skills';
 
 function Home () {
     return(
@@ -28,6 +30,9 @@ function Home () {
                 <span></span>
                 <span></span>
             </div>
+
+            <About />
+            <Skills />
         </div>
     )
 }
