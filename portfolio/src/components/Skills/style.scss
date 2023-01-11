@@ -1,0 +1,121 @@
+@import '../../style/settings.scss';
+
+
+.skills-container{
+    position: absolute;
+    bottom: -90%;
+    font-size: 42px;
+    left: 11%;
+}
+.my-skills{
+    padding-bottom: 55px;
+}
+.skills-container::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 0;
+    background: $textcolor2;
+    height: 10%;
+    width: 19em;
+    z-index: -1;
+}
+
+.skill-card{
+    position: absolute;
+    bottom: -180%;
+    display: flex;
+    cursor: pointer;
+}
+.card-1{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/html.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-1:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+.card-2{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/css.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-2:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+.card-3{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/js.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-3:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+.card-4{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/postgres.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-4:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+.card-5{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/react.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-5:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+

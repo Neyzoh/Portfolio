@@ -25,7 +25,7 @@
 .about-card{
         position: absolute;
         top: 280%;
-        left: 300%;
+        left: 350%;
         transform: translate((-50%, -50%));
         width: 800px;
         height: 250px;
@@ -46,6 +46,8 @@
     left: 60%;
 }
 
+
+
 .card-btn{
         background: lighten(#F3CA20, 3%);  
         border: 1px solid darken(#F3CA20, 4%);
@@ -55,6 +57,7 @@
         transition: all 150ms linear;
         padding: 15px;
         margin: 8%;
+        cursor: pointer;
 }
 
 .card-btn:hover{
