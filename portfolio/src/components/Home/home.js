@@ -3,6 +3,7 @@ import './style.scss';
 import {FaTwitter, FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import About from '../About';
 import Skills from '../Skills';
+import Contact from '../Contact';
 
 function Home () {
     return(
@@ -33,6 +34,7 @@ function Home () {
 
             <About />
             <Skills />
+            <Contact />
         </div>
     )
 }
