@@ -56,12 +56,12 @@ function Contact () {
                 <h2 className='contact-box-title'>Contact me</h2>
                 <form ref={form} onSubmit={handleSubmit} >
                     <div className='user-box'>
-                        <label>Name :</label>
+                        <label>Qui êtes vous :</label>
                         {name.error && <p className="error">{name.error}</p>}
                         <input type="text" name="user_name" value={name.value} onChange={e => setName({value: e.target.value, error: ''})}/>
                     </div>
                     <div className='user-box'>
-                        <label >Email :</label>
+                        <label >Votre mail :</label>
                         <>
                             {email.error && <p className="error">{email.error}</p>} 
                         </>

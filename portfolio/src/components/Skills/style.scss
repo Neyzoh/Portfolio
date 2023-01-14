@@ -25,6 +25,7 @@
 .skill-card{
     position: absolute;
     bottom: -180%;
+    right:  -600%;
     display: flex;
     cursor: pointer;
 }
@@ -115,6 +116,24 @@
 }
 
 .card-5:hover {
+    box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
+}
+
+.card-6{
+    background: #201f1fb5;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    padding: 100px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    left: 11%;
+    background-image: url('../assets/git.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-6:hover {
     box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
 }
 
