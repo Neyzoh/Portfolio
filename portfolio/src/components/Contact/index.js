@@ -1,10 +1,40 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './style.scss'
 
 function Contact () {
 
     const form = useRef();
+
+    const [name, setName] = useState({value: '', error: ''});
+    const [email, setEmail] = useState({value: '', error: ''});
+    const [message, setMessage] = useState({value: '', error: ''});
+    const [showSuccess, setShowSuccess] = useState(false);
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+    const validateForm = () => {
+        let formIsValid = true;
+        if (!name.value) {
+            setName({...name, error: 'Veuillez précisez qui vous êtes'});
+            formIsValid = false;
+        }
+        if (!emailRegex.test(email.value)) {
+            setEmail({...email, error: 'Veuillez entrer une adresse e-mail valide'});
+        }
+        if (!message.value) {
+            setMessage({...message, error: 'Veuillez entrer un message'});
+            formIsValid = false;
+        }
+        return formIsValid;
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            sendEmail(e)
+        }
+    }
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -13,6 +43,7 @@ function Contact () {
         .then((result) => {
             console.log(result.text);
             console.log('message sent !');
+            setShowSuccess(true)
         }, (error) => {
             console.log(error.text);
         });
@@ -23,22 +54,31 @@ function Contact () {
             <p className='my-contact'>Contact</p>
             <div className='contact-box'>
                 <h2 className='contact-box-title'>Contact me</h2>
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={handleSubmit} >
                     <div className='user-box'>
                         <label>Name :</label>
-                        <input type="text" name="user_name" />
+                        {name.error && <p className="error">{name.error}</p>}
+                        <input type="text" name="user_name" value={name.value} onChange={e => setName({value: e.target.value, error: ''})}/>
                     </div>
                     <div className='user-box'>
                         <label >Email :</label>
-                        <input type="email" name="user_email" />
+                        <>
+                            {email.error && <p className="error">{email.error}</p>} 
+                        </>
+                        <input type="email" name="user_email" value={email.value} onChange={e => setEmail({value: e.target.value, error: ''})}/>
                     </div>
-
                     <div className='user-box'>
                         <label >Message :</label>
-                        <textarea name="message" />
+                        <>  
+                            {message.error && <p className="error">{message.error}</p>} 
+                        </>
+                        <textarea name="message" onChange={e => setMessage({value: e.target.value, error: ''})} />
                     </div>
                     <div className='sumbmit-btn-container'>
-                        <input className='submit-input' type="submit" value="Send" />
+                            <>
+                                {showSuccess && <p className="success">Votre message à bien été envoyé</p>}
+                            </>
+                        <input className='submit-input' type="submit" value="Envoyé" />
                     </div>
                 </form>
             </div>

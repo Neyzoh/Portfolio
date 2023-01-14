@@ -92,7 +92,7 @@
 
 .sumbmit-btn-container{
     position: relative;
-    left: 35%;
+    left: 37%;
 }
 
 .submit-input{
@@ -104,8 +104,9 @@
     transition: all 150ms linear;
     padding: 15px;
     width: 20%;
-    margin: 8%;
+    margin: 5%;
     cursor: pointer;
+    
 }
 
 .submit-input:hover{
@@ -117,5 +118,15 @@
     text-decoration: none;
     text-shadow: -1px -1px 0 darken(#fff, 9.5%);
     transition: all 250ms linear;
-    color: rgb(0, 0, 0);
+    color: #000;
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+}
+
+.success{
+    color: rgb(48, 230, 48);
+    font-size: 12px;
 }
