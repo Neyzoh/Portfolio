@@ -53,7 +53,7 @@ function Contact () {
         <div className='contact-container'>
             <p className='my-contact'>Contact</p>
             <div className='contact-box'>
-                <h2 className='contact-box-title'>Contact me</h2>
+                <h2 className='contact-box-title'>Contacter moi</h2>
                 <form ref={form} onSubmit={handleSubmit} >
                     <div className='user-box'>
                         <label>Qui êtes vous :</label>
@@ -78,7 +78,7 @@ function Contact () {
                             <>
                                 {showSuccess && <p className="success">Votre message à bien été envoyé</p>}
                             </>
-                        <input className='submit-input' type="submit" value="Envoyé" />
+                        <input className='submit-input' type="submit" value="Envoyer" />
                     </div>
                 </form>
             </div>

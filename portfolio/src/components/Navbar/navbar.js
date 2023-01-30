@@ -19,7 +19,7 @@ function NavBar () {
                             <a href='#' className='navbar-link'>Skills</a>
                         </li>
                         <li className='navbar-item'>
-                            <a href='#' className='navbar-link'>Project</a>
+                            <a href='#' className='navbar-link'>projets</a>
                         </li>
                         <li className='navbar-item'>
                             <a href='#' className='navbar-link'>Contact</a>

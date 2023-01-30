@@ -44,6 +44,7 @@
 .card-btn-container{
     position: relative;
     left: 60%;
+    bottom: 8%;
 }
 
 
@@ -69,4 +70,5 @@
         text-shadow: -1px -1px 0 darken(#fff, 9.5%);
         transition: all 250ms linear;
         color: rgb(0, 0, 0);
+        cursor: pointer;
 }
