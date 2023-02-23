@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
+import {Link} from 'react-scroll'
 import './navbar.scss'
 
 function NavBar () {
-
+    
     const [active, setActive] = useState('navbar-menu');
+
+    
     const navbarToggle = () => {
         active === 'navbar-menu' ? setActive('navbar-menu navbar-active') : setActive('navbar-menu')
     }
@@ -13,16 +16,16 @@ function NavBar () {
                 <div className='navbar-links'>
                     <ul className={active}>
                         <li className='navbar-item'>
-                            <a href='#' className='navbar-link'>About me</a>
+                            <Link to='about-me' smooth={true} duration={1000} className='navbar-link'>About me</Link>
                         </li>
                         <li className='navbar-item'>
-                            <a href='#' className='navbar-link'>Skills</a>
+                            <Link to='skills' smooth={true} duration={1000} className='navbar-link'>Skills</Link>
                         </li>
                         <li className='navbar-item'>
-                            <a href='#' className='navbar-link'>projets</a>
+                            <Link to='projet' smooth={true} duration={1000} className='navbar-link'>Projet</Link>
                         </li>
                         <li className='navbar-item'>
-                            <a href='#' className='navbar-link'>Contact</a>
+                            <Link to='contact' smooth={true} duration={1000} className='navbar-link'>Contact</Link>
                         </li>
                     </ul>
                     <div onClick={navbarToggle} className='navbar-toggler'>
@@ -33,7 +36,7 @@ function NavBar () {
                     </div>
                 </div>
         </div>
-    )
+    );
 }
 
 export default NavBar;

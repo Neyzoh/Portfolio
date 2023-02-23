@@ -4,7 +4,7 @@ import CV from '../assets/CV.pdf'
 
 function About() {
     return(
-        <div className='about-container'>
+        <section className='about-container' id='aboutme'>
             <p className='about-me'>About me</p>
 
             <div className='about-card'>
@@ -18,7 +18,7 @@ function About() {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

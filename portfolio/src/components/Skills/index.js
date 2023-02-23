@@ -3,7 +3,7 @@ import './style.scss'
 
 function Skills () {
     return(
-        <div className="skills-container">
+        <section className="skills-container" id='skills'>
             <p className='my-skills'>Mes Skills</p>
 
             <div className='skill-card'>
@@ -15,7 +15,7 @@ function Skills () {
                 <div className='card-6'></div>
             </div>
             
-        </div>
+        </section>
     )
 }
 

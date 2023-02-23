@@ -11,9 +11,9 @@ function Home () {
     return(
         <div className="home">
             <div className='home-socials'>
-               <a href='#'className='home-socials-icon'><FaGithub size='6rem' color='#F3CA20'/></a>
-               <a href='#'className='home-socials-icon' ><FaLinkedinIn  size='6rem' color='#F3CA20'/></a>
-               <a href='#'className='home-socials-icon' ><FaTwitter  size='6rem' color='#F3CA20'/></a>
+               <a href='#'className='home-socials-icon'><FaGithub  color='#F3CA20' className='real-icon'/></a>
+               <a href='#'className='home-socials-icon' ><FaLinkedinIn   color='#F3CA20' className='real-icon'/></a>
+               <a href='#'className='home-socials-icon' ><FaTwitter  color='#F3CA20' className='real-icon'/></a>
             </div>
 
             <div className='home-description'>

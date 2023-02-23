@@ -3,7 +3,7 @@ import './style.scss'
 
 function Project () {
     return(
-        <div className="project-container">
+        <section className="project-container" id='projet'>
             <p className="my-project">Mes projets</p>
             <div className='card-container'>
                 <div className="card">
@@ -24,7 +24,7 @@ function Project () {
                 
                 
             </div>
-        </div>
+        </section>
     )
 }
 

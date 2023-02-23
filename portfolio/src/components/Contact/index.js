@@ -50,7 +50,7 @@ function Contact () {
     };
 
     return(
-        <div className='contact-container'>
+        <section className='contact-container' id='contact'>
             <p className='my-contact'>Contact</p>
             <div className='contact-box'>
                 <h2 className='contact-box-title'>Contacter moi</h2>
@@ -82,7 +82,7 @@ function Contact () {
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     )
 }
 

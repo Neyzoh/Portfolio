@@ -6,6 +6,8 @@
     justify-content: space-around;
     height: 8vh;
     font-size: 1.8rem;
+    position: sticky;
+    z-index: 1;
 
     &-title{
         text-transform: uppercase;
@@ -13,6 +15,7 @@
         font-size: 2.5rem;
         padding-right: 20%;
         letter-spacing: 0.2rem;
+        position: static;
     }
 
     &-menu{
