@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $backgroundcolor;
   color: $textcolor1;
+  overflow-x: hidden;
 }
 
 html{
@@ -18,4 +19,10 @@ html{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden!important;
+  }
 }

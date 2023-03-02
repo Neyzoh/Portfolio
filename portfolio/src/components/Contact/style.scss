@@ -132,3 +132,26 @@
     color: rgb(48, 230, 48);
     font-size: 12px;
 }
+
+@media all and (max-width: 768px) {
+    .contact-container{
+        bottom: -205%;
+        font-size: 4em;
+    }
+    .contact-container::before{
+        width: 15em;
+    }
+    .contact-box{
+        left: 350px;
+        width: 600px;
+        height: 600px;
+    }
+    .sumbmit-btn-container{
+        left: 30%;
+        
+    }
+    .submit-input{
+        width: 30%;
+        left: 2;
+    }
+}

@@ -16,7 +16,7 @@ function Project () {
                     </div>
                 </div>
                 <div className='card-details-btn-container'>
-                        <a href="#" >
+                        <a href="https://github.com/Neyzoh/E-learning-project" >
                             <button className='card-details-btn'>Lien Github</button>
                         </a>
                     </div>

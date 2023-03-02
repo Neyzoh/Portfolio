@@ -138,3 +138,34 @@
 }
 
 
+@media(max-width: 768px) {
+    .skills-container{
+        bottom: -83%;
+        font-size: 4em;
+    }
+    .skills-container::before{
+        width: 15em;
+    }
+    .skill-card{
+        bottom: -150%;
+        right: -220%;
+    }
+    .card-1{
+        padding: 50px;
+    }
+    .card-2{
+        padding: 50px;
+    }
+    .card-3{
+        padding: 50px;
+    }
+    .card-4{
+        padding: 50px;
+    }
+    .card-5{
+        padding: 50px;
+    }
+    .card-6{
+        padding: 50px;
+    }
+}

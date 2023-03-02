@@ -5,6 +5,14 @@
     color: $textcolor2;
     position: absolute;
     bottom: -300%;
-    left: 45%;
+    left: 800px;
     padding-bottom: 30px;
+}
+
+@media all and (max-width: 768px) {
+    .footer{
+        bottom: -300%;
+        left: 290px;
+        font-size: 10px;
+    }
 }

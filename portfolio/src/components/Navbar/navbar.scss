@@ -47,49 +47,19 @@
         color: rgb(255, 255, 255);
         border-radius: 6px;
     }
-    &-toggler div{
-        width: 2.5rem;
-        height: 0.2rem;
-        margin: 0.4rem;
-        background: $textcolor1;
-    }
+}
 
-    &-toggler{
-        cursor: pointer;
-        display: none;
-    }
+@media all and (max-width: 768px) {
+    .navbar {
+        width: 760px;
+        padding-left: 25px;
+        font-size: 2.005em;
 
-    @media screen and (max-width: 768px) {
-        &-toggler {
-            display: block;
-            padding-left: 100px ;
-        }
 
-        &-menu{
-            position: absolute;
-            top: 7vh;
-            right: 0;
-            width: 55%;
-            height: 93vh;
-            background-color:rgb(28, 28, 28);
-            flex-direction: column;
-            transform: translateX(100%);
-            transition: 0.5s ease-in;
+        &-link {
+            font-size: 1em;
+            padding: 10px 10px;
+            margin: 0.5rem 0;
         }
     }
-
-    &-active{
-        transform: translateX(0);
-    }
-}
-
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-4px, 5px);
-}
-.toggle .line2{
-   opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(-45deg) translate(-4px, 5px);
 }

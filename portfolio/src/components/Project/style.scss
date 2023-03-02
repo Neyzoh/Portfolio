@@ -102,3 +102,17 @@
         cursor: pointer;
 }
 
+@media screen and (max-device-width: 769px) {
+    .project-container{
+        bottom: -125%;
+        font-size: 4em;
+    }
+    .project-container::before{
+        width: 15em;
+    }
+    .card{
+        width: 150px;
+        height: 250px;
+        left: 20px;
+    }
+}

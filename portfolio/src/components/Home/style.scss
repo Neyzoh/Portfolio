@@ -152,46 +152,49 @@
 }
 
 
-@media screen and (max-device-width: 769px) {
+@media all and (max-width: 768px) {
   .home-image{
     display: none;
   }
   .home-description{
     z-index: -1;
-    left: 15%;
     height: 64vh;
+    padding-left: 100px;
+    
   }
   .home-description-title-1{
-    padding-left: 80px;
-    font-size: 3rem;
+    padding-left: 91px;
+    font-size: 6rem;
     font-weight: bold;
-    line-height: 9rem;
+    line-height: 10rem;
   }
   .home-description-title-2{
-    padding-r: 10px;
-    font-size: 3rem;
+    padding-left: 83px;
+    font-size: 6rem;
     font-weight: bold;
-    line-height: 9rem;
+    line-height: 10rem;
   }
   .home-description-title-3{
-    padding-right: 490px;
-    font-size: 3rem;
+    padding-right: 400px;
+    font-size: 5rem;
     font-weight: bold;
-    line-height: 9rem;
+    line-height: 10rem;
   }
   .home-underdesc{
-    height: 120vh;
+    height: 130vh;
     z-index: -1;
 
     &-title{
-      font-size: 2rem;
+      font-size: 3.5rem;
+      padding-left: 110px;
     }
   }
   .home-socials{
-    left: 10%;
+    padding-left: 60px;
     height: 70vh;
   }
   .real-icon{
-    font-size: 40px;
+    font-size: 60px;
   }
+  
 }
