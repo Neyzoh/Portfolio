@@ -137,10 +137,23 @@
     box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
 }
 
+@media  all and (max-width: 1200px) {
+    .skills-container{
+        bottom: -103%;
+        font-size: 5em;
+    }
+    .skills-container::before{
+        width: 25em;
+    }
+    .skill-card{
+        bottom: -150%;
+        right: -100vh;
+    }
+}
 
 @media(max-width: 768px) {
     .skills-container{
-        bottom: -83%;
+        bottom: -133%;
         font-size: 4em;
     }
     .skills-container::before{
@@ -148,24 +161,24 @@
     }
     .skill-card{
         bottom: -150%;
-        right: -220%;
+        right: -500px;
     }
     .card-1{
-        padding: 50px;
+        padding: 55px;
     }
     .card-2{
-        padding: 50px;
+        padding: 55px;
     }
     .card-3{
-        padding: 50px;
+        padding: 55px;
     }
     .card-4{
-        padding: 50px;
+        padding: 55px;
     }
     .card-5{
-        padding: 50px;
+        padding: 55px;
     }
     .card-6{
-        padding: 50px;
+        padding: 55px;
     }
 }

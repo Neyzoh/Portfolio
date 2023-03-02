@@ -102,17 +102,48 @@
         cursor: pointer;
 }
 
+@media  all and (max-width: 1200px) {
+    .project-container{
+        bottom: -150%;
+        font-size: 5em;
+    }
+    .project-container::before{
+        width: 25em;
+    }
+    .card{
+        width: 380px;
+        height: 480px;
+        left: 20px;
+    }
+    .card-details-frosted{
+        width: 580px;
+        height: 335px;
+        margin-top: 190px;
+    }
+    .card-details-text{
+        font-size: 25px;
+    }
+    .card-details-btn{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-device-width: 769px) {
     .project-container{
-        bottom: -125%;
+        bottom: -180%;
         font-size: 4em;
     }
     .project-container::before{
         width: 15em;
     }
     .card{
-        width: 150px;
-        height: 250px;
+        width: 180px;
+        height: 280px;
         left: 20px;
+    }
+    .card-details-btn{
+        padding: 20px;
+        font-size: 20px;
     }
 }

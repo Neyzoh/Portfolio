@@ -132,10 +132,25 @@
     color: rgb(48, 230, 48);
     font-size: 12px;
 }
+@media  all and (max-width: 1200px) {
+    .contact-container{
+        bottom: -240%;
+        font-size: 5em;
+    }
+    .contact-container::before{
+        width: 25em;
+    }
+    .contact-box{
+        left: 69vh;
+        width: 100vh;
+        height: 600px;
+       font-size: 25px;
+    }
+}
 
 @media all and (max-width: 768px) {
     .contact-container{
-        bottom: -205%;
+        bottom: -270%;
         font-size: 4em;
     }
     .contact-container::before{
@@ -147,11 +162,12 @@
         height: 600px;
     }
     .sumbmit-btn-container{
-        left: 30%;
-        
+        position: sticky;
+        left: 0;        
+
     }
     .submit-input{
         width: 30%;
-        left: 2;
+        left: 2px;
     }
 }
