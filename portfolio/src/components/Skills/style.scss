@@ -137,19 +137,19 @@
     box-shadow: 0px  0 darken(#F3CA20, 5%), 5px 4px 2px darken(#F3CA20, 2%);
 }
 
-// @media  all and (min-width: 1200px) {
-//     .skills-container{
-//         bottom: -103%;
-//         font-size: 5em;
-//     }
-//     .skills-container::before{
-//         width: 25em;
-//     }
-//     .skill-card{
-//         bottom: -150%;
-//         right: -100vh;
-//     }
-// }
+@media (min-width: 1200px) {
+    .skills-container{
+        bottom: -103%;
+        font-size: 5em;
+    }
+    .skills-container::before{
+        width: 25em;
+    }
+    .skill-card{
+        bottom: -150%;
+        right: -100vh;
+    }
+}
 
 @media(max-width: 768px) {
     .skills-container{
@@ -161,24 +161,24 @@
     }
     .skill-card{
         bottom: -110%;
-        right: -295px;
+        right: -280px;
     }
     .card-1{
-        padding:40px;
+        padding:38px;
     }
     .card-2{
-        padding:40px;
+        padding:38px;
     }
     .card-3{
-        padding:40px;
+        padding:38px;
     }
     .card-4{
-        padding:40px;
+        padding:38px;
     }
     .card-5{
-        padding:40px;
+        padding:38px;
     }
     .card-6{
-        padding:40px;
+        padding:38px;
     }
 }

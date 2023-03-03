@@ -102,7 +102,7 @@
         cursor: pointer;
 }
 
-@media  all and (max-width: 1200px) {
+@media(max-width: 1200px) {
     .project-container{
         bottom: -150%;
         font-size: 5em;
@@ -129,7 +129,7 @@
     }
 }
 
-@media screen and (max-device-width: 769px) {
+@media(max-device-width: 769px) {
     .project-container{
         bottom: -170%;
         font-size: 4em;
