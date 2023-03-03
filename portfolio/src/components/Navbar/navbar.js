@@ -10,7 +10,7 @@ function NavBar () {
                 <div className='navbar-links'>
                     <ul className='navbar-menu'>
                         <li className='navbar-item'>
-                            <Link to='about-me' smooth={true} duration={1000} className='navbar-link'>About me</Link>
+                            <Link to='about-me' smooth={true} duration={1000} className='navbar-link'>About</Link>
                         </li>
                         <li className='navbar-item'>
                             <Link to='skills' smooth={true} duration={1000} className='navbar-link'>Skills</Link>
