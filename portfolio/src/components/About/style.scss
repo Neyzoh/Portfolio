@@ -73,38 +73,38 @@
         cursor: pointer;
 }
 
-@media  all and (max-width: 1200px) {
-    .about-container{
-        font-size: 5em;
-        bottom: -30%;
-    }
-    .about-container::before{
-        width: 25em;
-    }
-    .about-card{
-        width: 105vh;
-        height: 30vh;
-        left: 690px;
-        top: 390px;
-    }
-    .about-card-paragraph{
-        font-size: 32px;
-        bottom: 12%;
-        right: 30px;
-        left: 2%;
-        position: absolute ;
-    }
-    .card-btn-container{
-        bottom: -6.5em;
-        left: 1px;
-    }
-    .card-btn{
-        padding: 26px;
-        margin: 3%;
-        border-radius: 3px;
-        font-size: 20px;
-    }
-}
+// @media  all and (max-width: 1200px) {
+//     .about-container{
+//         font-size: 5em;
+//         bottom: -30%;
+//     }
+//     .about-container::before{
+//         width: 25em;
+//     }
+//     .about-card{
+//         width: 105vh;
+//         height: 30vh;
+//         left: 690px;
+//         top: 390px;
+//     }
+//     .about-card-paragraph{
+//         font-size: 32px;
+//         bottom: 12%;
+//         right: 30px;
+//         left: 2%;
+//         position: absolute ;
+//     }
+//     .card-btn-container{
+//         bottom: -6.5em;
+//         left: 1px;
+//     }
+//     .card-btn{
+//         padding: 26px;
+//         margin: 3%;
+//         border-radius: 3px;
+//         font-size: 20px;
+//     }
+// }
 
 @media all and (max-width: 768px) {
     .about-container{
@@ -115,13 +115,13 @@
         width: 12em;
     }
     .about-card{
-        width: 430px;
+        width: 400px;
         height: 200px;
-        left: 265px;
+        left: 250px;
         top: 290px;
     }
     .about-card-paragraph{
-        font-size: 19px;
+        font-size: 18.5px;
         bottom: 12%;
         right: 30px;
         left: 2%;
@@ -135,6 +135,6 @@
         padding: 16px;
         margin: 3%;
         border-radius: 3px;
-        font-size: 16px;
+        font-size: 14px;
     }
 }

@@ -11,8 +11,9 @@
 
 @media all and (max-width: 768px) {
     .footer{
-        bottom: -300%;
+        bottom: -330%;
         left: 290px;
-        font-size: 10px;
+        font-size: 1px;
+        color: $backgroundcolor;
     }
 }

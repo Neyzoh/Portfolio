@@ -150,24 +150,27 @@
 
 @media all and (max-width: 768px) {
     .contact-container{
-        bottom: -270%;
+        bottom: -250%;
         font-size: 4em;
     }
     .contact-container::before{
-        width: 15em;
+        width: 12em;
     }
     .contact-box{
-        left: 350px;
-        width: 600px;
-        height: 600px;
+        left: 246px;
+        bottom: 100px;
+        width: 550px;
+        height: 580px;
+        padding-top: 10px;
     }
     .sumbmit-btn-container{
-        position: sticky;
-        left: 0;        
+        position: relative;
+        left: 180px;
+        width: 70%;
 
     }
     .submit-input{
         width: 30%;
-        left: 2px;
+        margin-left: 20px;
     }
 }

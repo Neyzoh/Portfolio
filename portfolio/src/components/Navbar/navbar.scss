@@ -49,20 +49,20 @@
     }
 }
 
-@media  all and (max-width: 1200px) {
-    .navbar{
-        width: 165vh;
-        font-size: 2.5em;
+// @media  all and (max-width: 1200px) {
+//     .navbar{
+//         width: 165vh;
+//         font-size: 2.5em;
 
-        &-title {
-            font-size: 29px;
-        }
-    }
-}
+//         &-title {
+//             font-size: 29px;
+//         }
+//     }
+// }
 
 @media all and (max-width: 768px) {
     .navbar {
-        width: 100%;
+        width: 90%;
         padding-left: 85px;
 
         &-title{
